@@ -1,30 +1,27 @@
 import pandas as pd
 from statsmodels.tsa.statespace.sarimax import SARIMAX
-from features import build_features
+import matplotlib.pyplot as plt
 
-#Load raw CSV
-df = pd.read_csv("data/raw/wti_inv_sample.csv", index_col="date", parse_dates=True)
-df = build_features(df)
+df = pd.read_csv("data/processed/merged.csv", index_col="date", parse_dates=True)
 
-
-#Target & exogenous features
 y = df["wti_spot"]
-X = df[["crude_inv", "wti_lag1", "inv_lag7", "dow", "month"]]
+exog_cols = [
+    "crude_inv",
+    "yield_spread_10_2",
+    "oecd_yoy",
+    "payems_yoy",
+    "wip_yoy",        #will be absent early; fill handled below
+]
+X = df.reindex(columns=exog_cols).ffill()
 
-#Fit SARIMAX (ARIMA(1,1,1) with weekly seasonality)
-model = SARIMAX(
-    y,
-    order=(1,1,1),
-    seasonal_order=(0,1,1,7),
-    exog=X
-)
+model = SARIMAX(y, order=(1,1,1), seasonal_order=(0,1,1,7), exog=X)
 res = model.fit(disp=False)
 
-#Forecast 30 days ahead
-future_X = X.iloc[-7265:].copy()
-forecast = res.get_forecast(steps=7265, exog=future_X)
-pred = forecast.predicted_mean
-conf = forecast.conf_int()
+#true 30-day forward (carry-forward exog except using iterative wti_lag if you add it)
+future_X = X.iloc[-1000:].copy()
+fc = res.get_forecast(steps=30, exog=future_X)
+pred = fc.predicted_mean
+conf = fc.conf_int()
 
 print("30-day forecast:")
 print(pd.DataFrame({"forecast": pred, "lower": conf.iloc[:,0], "upper": conf.iloc[:,1]}))
