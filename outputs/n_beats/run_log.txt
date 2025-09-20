@@ -1,0 +1,224 @@
+
+===== HydraCast hybrid run @ 2025-09-19 15:00:58.646954 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on residuals ...
+[INFO] Best iteration: 984
+[VAL ] RMSE=1.360  MAE=0.811  R2=0.858  DirAcc=34%
+[TEST] RMSE=0.808  MAE=0.613  R2=0.194  DirAcc=24%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+
+===== HydraCast hybrid run @ 2025-09-19 15:09:16.519145 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on residuals ...
+[INFO] Best iteration: 984
+[VAL ] RMSE=1.360  MAE=0.811  R2=0.858  DirAcc=34%
+[TEST] RMSE=0.808  MAE=0.613  R2=0.194  DirAcc=24%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+
+===== HydraCast hybrid run @ 2025-09-19 15:12:34.012375 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on residuals ...
+[INFO] Best iteration: 984
+[VAL ] RMSE=1.360  MAE=0.811  R2=0.858  DirAcc=34%
+[TEST] RMSE=0.808  MAE=0.613  R2=0.194  DirAcc=24%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[SAVE] Perm-importance-> outputs\xgb_hybrid_perm_importance.png
+[SAVE] Perm-importance-> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 64.087868   62.71 63.856748      0.231120
+2025-09-12 63.092691   63.02 62.888637      0.204055
+2025-09-13 63.195851   63.02 63.050518      0.145334
+2025-09-14 63.140746   63.02 63.030250      0.110496
+2025-09-15 63.136302   63.66 63.043256      0.093046
+
+===== HydraCast hybrid run @ 2025-09-19 15:32:27.362294 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on residuals ...
+[INFO] Best iteration: 984
+[VAL ] RMSE=1.360  MAE=0.811  R2=0.858  DirAcc=34%
+[TEST] RMSE=0.808  MAE=0.613  R2=0.194  DirAcc=24%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[SAVE] Perm-importance-> outputs\xgb_hybrid_perm_importance.png
+[SAVE] Perm-importance-> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 64.087868   62.71 63.856748      0.231120
+2025-09-12 63.092691   63.02 62.888637      0.204055
+2025-09-13 63.195851   63.02 63.050518      0.145334
+2025-09-14 63.140746   63.02 63.030250      0.110496
+2025-09-15 63.136302   63.66 63.043256      0.093046
+
+===== HydraCast hybrid run @ 2025-09-19 15:32:59.752627 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on next-day residuals (features lagged by 1) ...
+[INFO] Best iteration: 51
+[VAL ] RMSE=1.374  MAE=0.816  R2=0.855  DirAcc=30%
+[TEST] RMSE=0.782  MAE=0.603  R2=0.244  DirAcc=24%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 63.921140   62.71 63.856748      0.064391
+2025-09-12 62.950485   63.02 62.888637      0.061848
+2025-09-13 63.146271   63.02 63.050518      0.095754
+2025-09-14 63.126003   63.02 63.030250      0.095754
+2025-09-15 63.131894   63.66 63.043256      0.088638
+
+===== HydraCast hybrid run @ 2025-09-19 15:40:49.921953 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Test window 2025-08-17 → 2025-09-15 (burn-in=3)
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on next-day residuals ...
+[INFO] Best iteration: 51
+[VAL ] RMSE=1.374  MAE=0.816  R2=0.855  DirAcc=30%
+[TEST] RMSE=0.782  MAE=0.603  R2=0.244  DirAcc=24%
+[TEST (post-burn-in)] RMSE=0.786  MAE=0.600  R2=0.293  DirAcc=27%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[PLOT (post-burn-in)] RMSE=0.786  MAE=0.600  R2=0.293  DirAcc=27%
+[SAVE] Post-burn-in chart -> outputs\xgb_hybrid_30d_forecast_post_burnin.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 63.921140   62.71 63.856748      0.064391
+2025-09-12 62.950485   63.02 62.888637      0.061848
+2025-09-13 63.146271   63.02 63.050518      0.095754
+2025-09-14 63.126003   63.02 63.030250      0.095754
+2025-09-15 63.131894   63.66 63.043256      0.088638
+
+===== HydraCast hybrid run @ 2025-09-19 15:45:29.805848 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Test window 2025-08-17 → 2025-09-15 (burn-in=3)
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on next-day residuals ...
+[INFO] Best iteration: 51
+[VAL ] RMSE=1.374  MAE=0.816  R2=0.855  DirAcc=30%
+[TEST] RMSE=0.782  MAE=0.603  R2=0.244  DirAcc=24%
+[TEST (post-burn-in)] RMSE=0.786  MAE=0.600  R2=0.293  DirAcc=27%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[PLOT (post-burn-in)] RMSE=0.786  MAE=0.600  R2=0.293  DirAcc=27%
+[SAVE] Post-burn-in chart -> outputs\xgb_hybrid_30d_forecast_post_burnin.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 63.921140   62.71 63.856748      0.064391
+2025-09-12 62.950485   63.02 62.888637      0.061848
+2025-09-13 63.146271   63.02 63.050518      0.095754
+2025-09-14 63.126003   63.02 63.030250      0.095754
+2025-09-15 63.131894   63.66 63.043256      0.088638
+
+===== HydraCast hybrid run @ 2025-09-19 15:46:26.924147 =====
+[INFO] Reading data/processed/merged.csv ...
+[INFO] Rows: 7,272  Cols: 24 -> ['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Dropna rows: 7,272 -> 7,258
+[INFO] AR features: ['wti_lag1', 'wti_lag2', 'wti_lag3']
+[INFO] Residual features (30): ['crude_inv_lag7', 'crude_inv_lag14', 'crude_inv_ema21', 'wti_prompt_spread_lag7', 'wti_prompt_spread_lag14', 'wti_prompt_spread_ema21', 'wti_roll_ann_lag7', 'wti_roll_ann_lag14', 'wti_roll_ann_ema21', 'ng_prompt_spread_lag7', 'ng_prompt_spread_lag14', 'ng_prompt_spread_ema21', 'ng_roll_ann_lag7', 'ng_roll_ann_lag14', 'ng_roll_ann_ema21', 'yield_spread_10_2_lag7', 'yield_spread_10_2_lag14', 'yield_spread_10_2_ema21', 'oecd_yoy_lag7', 'oecd_yoy_lag14', 'oecd_yoy_ema21', 'payems_yoy_lag7', 'payems_yoy_lag14', 'payems_yoy_ema21', 'wip_yoy_lag7', 'wip_yoy_lag14', 'wip_yoy_ema21', 'inv_x_prompt', 'dow', 'month']
+[INFO] Split sizes -> train=7138, val=90, test=30
+[INFO] Test window 2025-08-17 → 2025-09-15 (burn-in=5)
+[INFO] Fitting AR(1..3) ...
+[INFO] Training XGBoost on next-day residuals ...
+[INFO] Best iteration: 51
+[VAL ] RMSE=1.374  MAE=0.816  R2=0.855  DirAcc=30%
+[TEST] RMSE=0.782  MAE=0.603  R2=0.244  DirAcc=24%
+[TEST (post-burn-in)] RMSE=0.807  MAE=0.612  R2=0.287  DirAcc=25%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_30d_forecast.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_30d_forecast.png
+[PLOT (post-burn-in)] RMSE=0.807  MAE=0.612  R2=0.287  DirAcc=25%
+[SAVE] Post-burn-in chart -> outputs\xgb_hybrid_30d_forecast_post_burnin.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual   ar_only  residual_hat
+2025-09-11 63.921140   62.71 63.856748      0.064391
+2025-09-12 62.950485   63.02 62.888637      0.061848
+2025-09-13 63.146271   63.02 63.050518      0.095754
+2025-09-14 63.126003   63.02 63.030250      0.095754
+2025-09-15 63.131894   63.66 63.043256      0.088638
+
+===== Hybrid-Returns run @ 2025-09-19 16:01:19.857076 =====
+[INFO] Loaded 7,272 rows, cols=['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Target splits -> train=7145, val=90, test=30
+[INFO] Best iteration: 55
+[VAL ] RMSE=1.413  MAE=0.886  R2=0.846  DirAcc=36%
+[TEST] RMSE=0.839  MAE=0.619  R2=0.130  DirAcc=28%
+[TEST (post-burn-in)] RMSE=0.840  MAE=0.610  R2=0.193  DirAcc=31%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_returns_30d.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_returns_30d.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_returns_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual  ar_only_level  residual_delta_hat
+2025-09-11 64.241894   62.71      63.856004            0.385889
+2025-09-12 63.044161   63.02      62.888280            0.155882
+2025-09-13 63.238982   63.02      63.049923            0.189058
+2025-09-14 63.194300   63.02      63.029680            0.164620
+2025-09-15 63.242745   63.66      63.042692            0.200053
+
+===== HydraCast (adaptive) @ 2025-09-19 16:02:09.513223 =====
+[INFO] rows=7,272 cols=24
+[VAL (1d)] RMSE=0.232  MAE=0.163  R2=0.996  DirAcc=64%
+[VAL] Best correlation shift = 0 (corr=0.998)
+[ADAPT] No lag detected; keeping 1-day horizon.
+
+===== Hybrid-Returns run @ 2025-09-19 16:02:29.459349 =====
+[INFO] Loaded 7,272 rows, cols=['wti_spot', 'crude_inv', 'DGS2', 'DGS10', 'yield_spread_10_2', 'yield_spread_z', 'PAYEMS', 'payems_mom', 'payems_yoy', 'OECDLEAD', 'oecd_yoy', 'oecd_z', 'IPB50001SQ', 'wip_yoy', 'wti_prompt_spread', 'wti_slope_pct', 'wti_roll_ann', 'wti_contango_flag', 'wti_backwardation_flag', 'ng_prompt_spread', 'ng_slope_pct', 'ng_roll_ann', 'ng_contango_flag', 'ng_backwardation_flag']
+[INFO] Target splits -> train=7145, val=90, test=30
+[INFO] Best iteration: 55
+[VAL ] RMSE=1.413  MAE=0.886  R2=0.846  DirAcc=36%
+[TEST] RMSE=0.839  MAE=0.619  R2=0.130  DirAcc=28%
+[TEST (post-burn-in)] RMSE=0.840  MAE=0.610  R2=0.193  DirAcc=31%
+[SAVE] Forecast CSV   -> outputs\xgb_hybrid_returns_30d.csv
+[SAVE] Forecast chart -> outputs\xgb_hybrid_returns_30d.png
+[SAVE] Perm-importance -> outputs\xgb_hybrid_returns_perm_importance.png
+Last 5 test rows:
+      date  forecast  actual  ar_only_level  residual_delta_hat
+2025-09-11 64.241894   62.71      63.856004            0.385889
+2025-09-12 63.044161   63.02      62.888280            0.155882
+2025-09-13 63.238982   63.02      63.049923            0.189058
+2025-09-14 63.194300   63.02      63.029680            0.164620
+2025-09-15 63.242745   63.66      63.042692            0.200053

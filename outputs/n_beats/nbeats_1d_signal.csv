@@ -1,0 +1,2 @@
+asof_date,next_date,last_price,forecast_next,delta_usd,signal,rule
+2025-08-16,2025-08-17,63.78,64.22545623779297,0.4454562377929676,1.0,|Δ| >= 0.3 USD
